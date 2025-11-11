@@ -23,7 +23,7 @@ import { MatInputModule } from '@angular/material/input';
 export class UserListComponent {
   router = inject(Router);
 
-  goToHomePage() {
-    this.router.navigateByUrl('');
+  goRoot(root: string) {
+    this.router.navigateByUrl(root);
   }
 }

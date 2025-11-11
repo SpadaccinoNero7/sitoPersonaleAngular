@@ -13,7 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 export class HomeComponent {
   router = inject(Router);
 
-  goToUserList() {
-    this.router.navigateByUrl('userList');
+  goToRoot(root: string) {
+    this.router.navigateByUrl(root);
   }
 }
