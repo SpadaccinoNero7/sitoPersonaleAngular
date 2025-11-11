@@ -9,4 +9,8 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   router = inject(Router);
+
+  goToUserList() {
+    this.router.navigateByUrl('userList');
+  }
 }
